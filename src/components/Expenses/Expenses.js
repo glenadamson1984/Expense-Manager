@@ -5,7 +5,7 @@ import ExpenseFilter from "./ExpenseFilter";
 import { useState } from "react";
 
 const Expenses = ({ expenses }) => {
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("2020");
 
   const onFilterChangeHandler = (filterValue) => {
     setFilter(filterValue);
