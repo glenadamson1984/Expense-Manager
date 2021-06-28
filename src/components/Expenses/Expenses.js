@@ -14,7 +14,10 @@ const Expenses = ({ expenses }) => {
   return (
     <>
       <Card className="expenses">
-        <ExpenseFilter onFilterChange={onFilterChangeHandler} />
+        <ExpenseFilter
+          selected={filter}
+          onFilterChange={onFilterChangeHandler}
+        />
         {expenses.map((expense) => (
           <ExpenseItem
             key={expense.id}
